@@ -428,6 +428,37 @@ template {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .search__input {
+    width: 240px;
+  }
+
+  .navbar-top {
+    height: 100px;
+  }
+
+  .navmenu-top {
+    height: 60px;
+  }
+  .navmenu-top__link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
 }/*# sourceMappingURL=style.css.map */
