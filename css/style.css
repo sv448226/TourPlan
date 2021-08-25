@@ -349,18 +349,22 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #ffffff;
 }
-.header-top {
+.navbar-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0 40px 0px;
+  height: 120px;
 }
-.header__search {
+.navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+
+.logo {
+  max-width: 177px;
 }
 
 .search {
@@ -409,4 +413,21 @@ template {
 }
 .user__name {
   margin-left: 18px;
+}
+
+.navmenu {
+  background-color: #0A223D;
+}
+.navmenu-top {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navmenu-top__link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
