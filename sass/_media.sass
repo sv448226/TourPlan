@@ -34,3 +34,21 @@
     display: none
   .mobile-bottom
     display: block
+  .info-right
+    display: none
+
+  .info
+    padding: 8px 0 20px 0
+    &-left
+      justify-content: space-between
+      &__offer
+        order: -1
+      &-list
+        flex-basis: auto
+      &__name, &__description
+        flex-basis: 100%
+
+@media (max-width: 576px)
+  .logo
+    &__image
+      width: 99px
