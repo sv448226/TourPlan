@@ -1,15 +1,13 @@
 .navbar
   background-color: #ffffff
-  &-top
+  &-wrap
     display: flex
     align-items: center
     justify-content: space-between
     height: 120px
-  &__search
-    margin-right: auto
-    margin-left: 108px
 .logo
-  max-width: 177px
+  &__image
+    width: 177px
 .search
   display: flex
   position: relative
@@ -49,6 +47,19 @@
     object-fit: cover
   &__name
     margin-left: 18px
+.mobile-bottom
+  display: none
+  &__line
+    width: 16px
+    height: 1px
+    background-color: $text-color
+    margin: 4px 0px
+    display: block
+    &:first-child
+      margin-top: 0px
+    &:last-child
+      margin-bottom: 0px
+
 .navmenu
   background-color: $dark
   &-top
@@ -57,7 +68,7 @@
     justify-content: space-between
     align-items: center
     &__link
-      color: #ffffff
+      color: $light
       text-decoration: none
       text-transform: uppercase
       font-size: 14px

@@ -5,11 +5,14 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
+  .logo
+    &__image
+      width: 133px
   .search
     &__input
       width: 240px
   .navbar
-    &-top
+    &-wrap
       height: 100px
   .navmenu
     &-top
@@ -19,4 +22,15 @@
 
 @media (max-width: 768px)
   .container
-    max-width: 700px
+    max-width: 576px
+    width: 87%
+  .navbar
+    &__search, &__user
+      display: none
+  .navbar
+    &-wrap
+      height: 70px
+  .navmenu
+    display: none
+  .mobile-bottom
+    display: block
