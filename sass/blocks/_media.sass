@@ -1,0 +1,32 @@
+.media
+  padding-bottom: 70px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.swiper
+  width: 728px
+  height: 450px
+  border-radius: 8px
+  position: relative
+  z-index: 10
+  &-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    border: 0
+    background-color: transparent
+    cursor: pointer
+    z-index: 20
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    &--prev
+      left: 16px
+      background-image: url('../img/arrow-prev.svg')
+    &--next
+      right: 16px
+      background-image: url('../img/arrow-next.svg')
