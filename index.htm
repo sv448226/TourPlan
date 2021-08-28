@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=bf8e89c5-2d4f-451f-9302-36ad7d394c12"
+    type="text/javascript"></script>
+  <script src="js/yandexmap.js" type="text/javascript"></script>
+
+
+
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Best Tour Plan - First page</title>
@@ -97,8 +103,10 @@
           </div>
         </div>
         <div class="media__aside">
-          <div class="media__buy"></div>
-          <div class="media__map"></div>
+          <div class="media__booking">
+            
+          </div>
+          <div class="media__map" id="map"> </div>
         </div>
       </div>
     </div>
