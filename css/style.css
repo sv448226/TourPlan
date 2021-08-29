@@ -508,7 +508,7 @@ template {
 }
 
 .info-right {
-  width: 65px;
+  width: 77px;
   min-height: 30px;
   padding: 9px 0 6px 0;
   background-color: #ec1f46;
@@ -527,40 +527,12 @@ template {
   line-height: 18px;
 }
 
-.media {
-  padding-bottom: 70px;
-}
-.media-wrap {
-  hight: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.media__aside {
-  min-height: 450px;
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-}
-.media__booking {
-  width: 294px;
-  min-height: 154px;
-  border-radius: 8px;
-  background-color: #0A223D;
-  padding: 28px;
-  margin-bottom: 27px;
-}
-.media__map {
-  width: 350px;
-  height: 215px;
-}
-
 .swiper {
   width: 728px;
   height: 450px;
   border-radius: 8px;
   position: relative;
-  z-index: 10;
+  margin: 0;
 }
 .swiper-button {
   position: absolute;
@@ -585,9 +557,115 @@ template {
   background-image: url("../img/arrow-next.svg");
 }
 
+.media {
+  margin-bottom: 70px;
+}
+.media-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside-booking {
+  width: 350px;
+  min-height: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  border-radius: 8px;
+  background-color: #0A223D;
+  font-family: "Nunito", sanf-serif;
+  color: #ffffff;
+}
+.aside-booking-wrap {
+  padding: 28px;
+}
+.aside-booking-top {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aside-booking-top-left__title {
+  font-size: 10px;
+  line-height: 14px;
+}
+.aside-booking-top-left__cost {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+.aside-booking-top-left__text {
+  margin-top: 0px;
+}
+.aside-booking-top-right-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  height: 20px;
+}
+.aside-booking-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 9px;
+  margin-bottom: 17px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.aside-booking-center-phone {
+  display: flex;
+  width: 76px;
+}
+.aside-booking-center-phone__text {
+  margin-left: 8px;
+}
+.aside-booking-bottom {
+  width: 100%;
+  margin: auto;
+  border: px solid red;
+}
+.aside-booking-bottom__submit {
+  width: 100%;
+  height: 45px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #ec1f46;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+}
+.aside-map {
+  width: 350px;
+  height: 215px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: red;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+
+  .swiper {
+    width: 588px;
+  }
+  .swiper img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 992px) {
@@ -612,6 +690,30 @@ template {
   }
   .navmenu-top__link {
     font-size: 12px;
+  }
+
+  .swiper {
+    width: 700px;
+    margin-bottom: 30px;
+  }
+
+  .media {
+    margin-bottom: 60px;
+  }
+  .media-wrap {
+    flex-direction: column;
+  }
+
+  .aside {
+    flex-direction: row;
+    width: 100%;
+    height: 215px;
+  }
+  .aside-booking {
+    width: 340px;
+  }
+  .aside-map {
+    width: 340px;
   }
 }
 @media (max-width: 768px) {
@@ -655,9 +757,58 @@ template {
   .info-left__name, .info-left__description {
     flex-basis: 100%;
   }
+
+  .swiper {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+
+  .media {
+    margin-bottom: 60px;
+  }
+  .media-wrap {
+    flex-direction: column;
+  }
+
+  .aside {
+    flex-direction: column;
+    height: 450px;
+  }
+  .aside-booking {
+    width: 100%;
+    min-height: 215px;
+  }
+  .aside-map {
+    width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .logo__image {
     width: 99px;
+  }
+
+  .media {
+    margin-bottom: 40px;
+  }
+
+  .swiper {
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .aside {
+    flex-direction: column;
+    min-height: 450px;
+  }
+  .aside-booking {
+    width: 100%;
+    min-height: 215px;
+  }
+  .aside-map {
+    width: 100%;
+    background-color: red;
   }
 }/*# sourceMappingURL=style.css.map */
