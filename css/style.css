@@ -652,7 +652,7 @@ template {
   height: 215px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: red;
+  background-color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -809,6 +809,5 @@ template {
   }
   .aside-map {
     width: 100%;
-    background-color: red;
   }
 }/*# sourceMappingURL=style.css.map */
