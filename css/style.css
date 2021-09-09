@@ -657,7 +657,6 @@ template {
 .emailer {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/emailer-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

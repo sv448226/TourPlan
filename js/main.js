@@ -30,3 +30,5 @@ document.addEventListener('keydown', function(event) {
     document.querySelector('.media-swiper-button--prev').click();
   }
 });
+
+$('.emailer').parallax({imageSrc: '../img/emailer-bg.jpg'});
