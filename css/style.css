@@ -527,14 +527,17 @@ template {
   line-height: 18px;
 }
 
-.swiper {
+.media {
+  margin-bottom: 70px;
+}
+.media-swiper {
   width: 728px;
   height: 450px;
   border-radius: 8px;
   position: relative;
   margin: 0;
 }
-.swiper-button {
+.media-swiper-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -548,17 +551,13 @@ template {
   background-position: center;
   background-size: 10px;
 }
-.swiper-button--prev {
+.media-swiper-button--prev {
   left: 16px;
   background-image: url("../img/arrow-prev.svg");
 }
-.swiper-button--next {
+.media-swiper-button--next {
   right: 16px;
   background-image: url("../img/arrow-next.svg");
-}
-
-.media {
-  margin-bottom: 70px;
 }
 .media-wrap {
   display: flex;
@@ -732,10 +731,10 @@ template {
     max-width: 960px;
   }
 
-  .swiper {
+  .media-swiper {
     width: 588px;
   }
-  .swiper img {
+  .media-swiper img {
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -765,13 +764,12 @@ template {
     font-size: 12px;
   }
 
-  .swiper {
-    width: 700px;
-    margin-bottom: 30px;
-  }
-
   .media {
     margin-bottom: 60px;
+  }
+  .media-swiper {
+    width: 700px;
+    margin-bottom: 30px;
   }
   .media-wrap {
     flex-direction: column;
@@ -831,14 +829,13 @@ template {
     flex-basis: 100%;
   }
 
-  .swiper {
+  .media {
+    margin-bottom: 60px;
+  }
+  .media-swiper {
     width: 100%;
     height: 450px;
     margin-bottom: 20px;
-  }
-
-  .media {
-    margin-bottom: 60px;
   }
   .media-wrap {
     flex-direction: column;
@@ -886,8 +883,7 @@ template {
   .media {
     margin-bottom: 40px;
   }
-
-  .swiper {
+  .media-swiper {
     height: 250px;
     border-radius: 8px;
     margin-bottom: 20px;
