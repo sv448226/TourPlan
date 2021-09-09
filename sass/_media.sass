@@ -6,6 +6,9 @@
       width: 588px
       & img
         object-fit: cover
+  .card
+    width: 230px
+    height: 255px
 
 @media (max-width: 992px)
   .container,
@@ -68,6 +71,15 @@
         &--next
           left: 50%
           margin-left: 105px
+  .activities
+    padding: 60px 0 50px 0
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 339px
+    height: 255px
+  .card-margin
+    margin-bottom: 20px
 
 @media (max-width: 768px)
   .container
@@ -149,6 +161,19 @@
           display: none
       &__text
         max-width: 390px
+  .activities
+    padding: 40px 0 40px 0
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 48%
+    height: 255px
+  .card-margin
+    margin-bottom: 20px
 
 @media (max-width: 576px)
   .logo
@@ -194,3 +219,6 @@
           display: none
       &__text
         max-width: 80%
+
+  .card
+    width: 100%
