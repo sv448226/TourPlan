@@ -1,4 +1,4 @@
-const swiper = new Swiper('.media-swiper', {
+const mediaSwiper = new Swiper('.media-swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -7,6 +7,18 @@ const swiper = new Swiper('.media-swiper', {
   navigation: {
     nextEl: '.media-swiper-button--next',
     prevEl: '.media-swiper-button--prev',
+  },
+});
+
+const reviewSwiper = new Swiper('.review-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.review-swiper-button--next',
+    prevEl: '.review-swiper-button--prev',
   },
 });
 
